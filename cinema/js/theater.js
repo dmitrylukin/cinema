@@ -260,9 +260,9 @@ function registerPlayer( type, object ) {
 	Justin.TV Support removed 8-5-2014
 	theater.loadVideo( "blip", "6484826", 60 )
 	theater.loadVideo( "html", "<span style='color:red;'>Hello world!</span>", 10 )
-	theater.loadVideo( "viooz", "", 0 )
-	thetaer.loadVideo( "dailymotion", "x1946tk", 0 )
-	theater.loadVideo( "ustreamlive", "1524" )
+	theater.loadVideo( "viooz", "", 0 ) */
+	theater.loadVideo( "dailymotion", "x1946tk", 0 )
+/*	theater.loadVideo( "ustreamlive", "1524" )
 	Livestream Support disabled 5-9-2016: Original API just stopped working
 
 */
@@ -1787,6 +1787,7 @@ function registerPlayer( type, object ) {
 			Standard Player Methods
 		*/
 		this.setVideo = function( id ) {
+console.log("JS log: "+id);
 			this.lastStartTime = null;
 			this.lastVideoId = null;
 			this.videoId = id;
